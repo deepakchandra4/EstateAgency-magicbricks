@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>EstateAgency - Index</title>
+  <title>Magic Bricks</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -22,19 +22,12 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!--Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- =======================================================
-  * Template Name: EstateAgency
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -135,12 +128,12 @@
 
   <!-- ======= Header/Navbar ======= -->
 
-  <div class="d-flex navbar navbar-default navbar-trans navbar-expand-lg top-navbar-color"
+  <div class="navbar navbar-default navbar-trans navbar-expand-lg top-navbar-color"
     style="background-color: rgb(200, 132, 6);">
-    <div class="" style="padding-left: 8rem;">
-      <h2>magicbricks</h2>
+    <div class="p-2">
+      <h2 class="text-white">magicbricks</h2>
     </div>
-    <div class="justify-content-center" id="navbarDefault">
+    <!-- <div class="justify-content-center" id="navbarDefault">
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -153,24 +146,33 @@
           </div>
         </li>
       </ul>
-    </div>
-    <div class="d-flex w-100 justify-content-end align-items-center " style="padding-right: 8rem;">
+    </div> -->
+    <div class="d-flex align-items-center pe-2">
       <div class="" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Login</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item " href="property-single.html">Property Single</a>
-              <a class="dropdown-item " href="blog-single.html">Blog Single</a>
-              <a class="dropdown-item " href="agents-grid.html">Agents Grid</a>
+              <a class="dropdown-item " href="property-single.html">My Profile</a>
+              <a class="dropdown-item " href="blog-single.html">Blogs</a>
+              <a class="dropdown-item " href="agents-grid.html">Agents</a>
               <a class="dropdown-item " href="agent-single.html">Agent Single</a>
+              <div class="ps-3">
+                <button class="btn  ">
+                  <a href="Login.html" class="text-decoration-none link-hover">Login</a>
+                </button>
+              </div>
+             <div class="d-flex p-3">
+              <p class="" style="font-size: small;">New to <br> MagicBricks?</p>
+              <a class="" style="font-size: small; color: blue;" href="">SignUp</a>
+             </div>
             </div>
           </li>
         </ul>
       </div>
       <div class="">
-        <button class="float-end btn btn-primary" style="float: left;">Post a Property</button>
+        <button class="btn btn-primary " id="post-property-btn" >Post a Property</button>
       </div>
     </div>
   </div>
@@ -188,10 +190,10 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Buy</a>
-            <div class="dropdown-menu d-flex">
+            <div class="dropdown-menu">
               <div class="">
                 <a class="dropdown-item" href="property-single.html">Popular Choices</a>
-                <ul class="">
+                <ul class="list-unstyled ms-3">
                   <li><a href="">Ready to move</a></li>
                   <li><a href="">Owner Properties</a></li>
                   <li><a href="">Budget Homes</a></li>
@@ -201,7 +203,7 @@
               </div>
               <div>
                 <a class="dropdown-item " href="blog-single.html">Property Types</a>
-                <ul class="">
+                <ul class="list-unstyled ms-3">
                   <li><a href="">Flats in Bangalore</a></li>
                   <li><a href="">House for sale in Banglore</a></li>
                   <li><a href="">Villa in Banglore</a></li>
@@ -212,7 +214,7 @@
               </div>
               <div>
                 <a class="dropdown-item " href="blog-single.html">Budget</a>
-                <ul class="">
+                <ul class="list-unstyled ms-3">
                   <li><a href="">Ready to move</a></li>
                   <li><a href="">Owner Properties</a></li>
                   <li><a href="">Budget Homes</a></li>
@@ -222,7 +224,7 @@
               </div>
               <div>
                 <a class="dropdown-item " href="blog-single.html">Explore</a>
-                <ul class="">
+                <ul class="list-unstyled ms-3">
                   <li><a href="">Ready to move</a></li>
                   <li><a href="">Owner Properties</a></li>
                   <li><a href="">Budget Homes</a></li>
@@ -232,7 +234,7 @@
               </div>
               <div>
                 <a class="dropdown-item " href="blog-single.html">Buying Tools</a>
-                <ul class="">
+                <ul class="list-unstyled ms-3">
                   <li><a href="">Ready to move</a></li>
                   <li><a href="">Owner Properties</a></li>
                   <li><a href="">Budget Homes</a></li>
@@ -301,28 +303,27 @@
 
   <!-- ======= Intro Section ======= -->
 
-  <div class="">
-
+  <div class="p-5">
     <div class="d-flex justify-content-center align-items-center">
       <h3 class="p-5">Welcome Back Let's Continue your search</h3>
     </div>
     <div class="d-flex justify-content-center">
-      <ul class="d-flex list-unstyled gap-3">
-        <li><a href="">Buy</a></li>
-        <li><a href="">Rent</a></li>
-        <li><a href="">PG</a></li>
-        <li><a href="">Plot</a></li>
-        <li><a href="">Commercial</a></li>
-        <li><a href="">Post Ad</a></li>
+      <ul class="d-flex list-unstyled gap-5 ">
+        <li class="list-group-item"><a href="">Buy</a></li>
+        <li class="list-group-item"><a href="">Rent</a></li>
+        <li class="list-group-item"><a href="">PG</a></li>
+        <li class="list-group-item"><a href="">Plot</a></li>
+        <li class="list-group-item"><a href="">Commercial</a></li>
+        <li class="list-group-item"><a href="">Post Ad</a></li>
       </ul>
     </div>
 
-<div class="container p-3 bg-secondary rounded-5">
+<div class="container  rounded-5 bg-body-tertiary border border-secondary">
   <div class="row">
-    <div class="col-sm d-flex align-items-center">
-      <i class="fa-solid fa-location-dot"></i>
-          <input type="text" value="" data-role="tagsinput" class="bg-transparent border-0  ps-2" style="outline: 0 ;"
-            placeholder="Enter City , Locality , Project" />
+    <div class="col-sm d-flex align-items-center p-2 ">
+      <i class="fa-solid fa-location-dot me-2"></i>
+          <input type="text" value="" data-role="tagsinput" class="bg-transparent border-0 w-100 placeholder-lg " style="outline: 0 ;"
+            placeholder="Enter City, Locality, Project" />
           <script>
             $('input').tagsinput({
               typeahead: {
@@ -333,70 +334,33 @@
             });
           </script>
     </div>
-    <div class="col-sm d-flex align-items-center">
+    <div class="col-sm d-flex align-items-center p-2">
+      <div class="vr me-2" style="height: 40px;"></div>
       <i class="fa-solid fa-house"></i>
-          <div class="w-25">
-            <select name="Flat" id="" class="bg-transparent border-0 px-3" style="outline: 0;">
-              <option value="none">Flat</option>
-              <option value="">dfew</option>
-              <option value="">few</option>
-              <option value="">ef</option>
-              <option value="">fe</option>
-            </select>
-          </div>
-    </div>
-    <div class="col-sm d-flex align-items-center">
-      One of three columns
-    </div>
-  </div>
-</div>
-
-    <!-- <div class="d-flex justify-content-center col">
-      <div class="rounded-5 bg-body-tertiary p-3 border-2 border-black align-items-center d-flex ">
-        <div class="">
-          <i class="fa-solid fa-location-dot"></i>
-          <input type="text" value="" data-role="tagsinput" class="bg-transparent border-0  ps-2" style="outline: 0 ;"
-            placeholder="Enter City , Locality , Project" />
-          <script>
-            $('input').tagsinput({
-              typeahead: {
-                source: function (query) {
-                  return $.getJSON('citynames.json');
-                }
-              }
-            });
-          </script>
-        </div>
-        <div class=" d-flex align-items-center ">
-          <i class="fa-solid fa-house"></i>
-          <div class="w-25">
-            <select name="Flat" id="" class="bg-transparent border-0 px-3" style="outline: 0;">
-              <option value="none">Flat</option>
-              <option value="">dfew</option>
-              <option value="">few</option>
-              <option value="">ef</option>
-              <option value="">fe</option>
-            </select>
-          </div>
-        </div>
-        <i class="fa-solid fa-indian-rupee-sign"></i>
-        <div class=" d-flex align-items-center">
-          <i class="fa-solid fa-house"></i>
-          <div class="w-25">
-            <select name="Flat" id="" class="bg-transparent border-0" style="outline: 0;">
-              <option value="none">Flat</option>
-              <option value="">dfew</option>
-              <option value="">few</option>
-              <option value="">ef</option>
-              <option value="">fe</option>
-            </select>
-          </div>
-        </div>
-
+      <div class="w-100 ms-1">
+        <select class="bg-transparent border-0 w-100" style="outline:0 ; border: 0">
+          <option selected>Flat</option>
+          <option value="1">130299293 $</option>
+          <option value="2">54545154 $</option>
+          <option value="3">5548454 $</option>
+        </select>
       </div>
-    </div> -->
+    </div>
+    <div class="col-sm d-flex align-items-center p-2">
+      <div class="vr me-2" style="height:40px;"></div>
+      <i class="fa-solid fa-indian-rupee-sign"></i>
+          <div class="w-100 ms-1">
+            <select class="w-100 bg-transparent border-0" style="outline:none">
+              <option selected>Budget</option>
+              <option value="1">130299293 $</option>
+              <option value="2">54545154 $</option>
+              <option value="3">5548454 $</option>
+            </select>
+        </div>
+    </div>
   </div>
-  </div>
+</div>  
+</div>
 
 <!--Carousel-->
 
