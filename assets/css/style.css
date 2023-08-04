@@ -750,6 +750,7 @@ a:hover {
 
 .navbar-default .dropdown .dropdown-menu {
   border-top: 0;
+  position: absolute;
   border-left: 4px solid #2eca6a;
   border-right: 0;
   border-bottom: 0;
