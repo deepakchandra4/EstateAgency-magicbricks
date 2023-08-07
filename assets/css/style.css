@@ -671,7 +671,7 @@ a:hover {
   letter-spacing: 0.03em;
   transition: all 0.1s ease-in-out;
   position: relative;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   padding-right: 10px;
 }
 
@@ -779,6 +779,11 @@ a:hover {
     display: block;
     position: absolute;
     box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(20, 19, 18, 0.1);
+  }
+}
+@media (min-width : 768px) {
+  .navbar-default .dropdown .buy-menu-dropdown {
+    display: flex;
   }
 }
 
